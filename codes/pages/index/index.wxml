@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class='page'>
+  <canvas class='canvas' canvas-id='myCanvas'></canvas>
+
+  <view class='radius-settings-container'>
+    <view class='radius-settings-item'>
+      <text class='radius-settings-txt' 
+        bindlongpress="onRadiusBLongPress">子尺半径</text>
+      <slider class='radius-settings-slider' bindchange="onRadiusBChange" min="0" max="{{radiusBMax}}" activeColor="{{colorSelected}}" value="{{sliderValueB}}" show-value/>
+    </view>
+
+    <view class='radius-settings-item'>
+      <text class='radius-settings-txt'
+        bindlongpress="onRadiusCLongPress">绘点半径</text>
+      <slider class='radius-settings-slider' bindchange="onRadiusCChange" min="0" max="{{radiusCMax}}" activeColor="{{colorSelected}}" value="{{sliderValueC}}" show-value/>
+    </view>
+  </view>
+
+  <view class='button-container'>
+    <button class="mini-btn" type="default" size="mini" 
+      bindtap="chooseImage" bindlongpress="onImageLongPress">底图</button>
+
+    <button class="mini-btn" type="default" size="mini" 
+      bindtap="chooseColor" bindlongpress="onColorLongPress">颜色</button>
+
+    <button class="mini-btn" type="default" size="mini"
+      bindtap="startDrawFlowerLines" bindlongpress="onDrawLongPress">绘制</button>
+
+    <button class="mini-btn" type="default" size="mini" 
+      bindtap="saveCanvas" bindlongpress="onSaveLongPress">保存</button>
+
+    <button class="mini-btn" type="default" size="mini"
+      open-type="share" bindlongpress="onSendLongPress">发送</button>
+  </view>
+  
+  <view class="txt-container" bindlongpress="onTipLongPress">
+    <text class='txt'>上述按钮 - 点按执行功能 - 长按弹出提示</text>
+    <text class='txt'>design by zhuanghongji</text>
+  </view>
+</view>

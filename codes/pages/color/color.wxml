@@ -1,0 +1,14 @@
+
+<view class='page'>
+  <view 
+    class='colors' wx:for="{{colorList}}" 
+    wx:key="keys" wx:for-item="colors">
+      <button 
+        type="default" size="mini"
+        wx:for="{{colors.colors}}" wx:key="key" 
+        wx:for-item='color' data-color="{{color.color}}" 
+        bindtap="onColorTab" style='margin: 10rpx; background-color: {{color.color}}; color: {{color.color}};'>
+        {{color.key}}
+      </button>
+  </view>
+</view>

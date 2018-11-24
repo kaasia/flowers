@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/color/color"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一个繁花曲线",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#F8F8F8"
+  }
+}
