@@ -9,6 +9,8 @@
 
 你可以通过调整「子尺半径」「绘点半径」和「绘制颜色」等参数来绘制各种各样的繁花曲线图，同时支持设置背景图、保存到相册、发送给好友。
 
+如果你对繁花曲线在 Android 上的实现感兴趣：[Click Me !](https://github.com/zhuanghongji/FlowersView)
+
 TODO: 补充繁花曲线绘制算法文档。
 
 > 具体实现代码，见 codes 目录。
